@@ -11,6 +11,6 @@ public class Startup implements ServletContextListener {
         ObjectifyService.init();
 
         // Register any entity classes you intend to use
-        ObjectifyService.factory().register(Thing.class);
+        ObjectifyService.register(Thing.class);
     }
 }

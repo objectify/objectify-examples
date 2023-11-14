@@ -17,7 +17,7 @@ public class Main {
         ObjectifyService.init();
 
         // Register any entity classes you intend to use
-        ObjectifyService.factory().register(Thing.class);
+        ObjectifyService.register(Thing.class);
 
         // To use Objectify, you must create a session of work. Sessions should be short-lived.
         ObjectifyService.run(Main::someWork);
